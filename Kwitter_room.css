@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+    background-image: url(https://www.teahub.io/photos/full/83-833982_lab-dog-images-download.jpg);
+    background-size: cover;
+}
+
+.color_username{
+color: lightpink;
+}
+
+#logout{
+    float:right;
+    font-family: Arial;
+    font-size: larger;
+}

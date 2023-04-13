@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>chat</title>
+        <link href="https://fonts.googleapis.com/css?family=Aboreto&display=swap" rel="stylesheet"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+        <link rel="stylesheet" type="text/css" href="Kwitter_room.css">
+       
+    </head>
+    <body>
+        <button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="log_out()">Salir</button>                                                                                                                                                           
+        <h3 id="koko">CHAT</h3>
+        <h4 id="kokito">:) </h4>
+        <h3 id="milanesa" class="color_username">
+
+        </h3>
+
+<div class="form_group input_div_room_page"><label>#creaunasala</label><input type="text" placeholder="room name" id="room_name" class="form-control
+    "></div>
+    <button id="add_room" class=" btn btn-info" onclick="add_room()">añadir sala</button>
+    <h3 class="color_username" id="bee_movie">#saslasentendencia</h3>
+    <div id="output" style="text-align: left; margin-bottom: 70px; ;"></div>
+    
+    <script src="kwitter_room.js"></script>
+    </body>
+</html>

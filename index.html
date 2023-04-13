@@ -1,9 +1,9 @@
 <html>
     <head>
         <title>chat</title>
-        <link href="https://fonts.googleapis.com/css?family=Aboreto&display=swap" rel="stylesheet"> 
+       <link href="https://fonts.googleapis.com/css?family=Aboreto&display=swap" rel="stylesheet"> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
@@ -18,7 +18,7 @@
     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
         <img src="data:image/png;base64,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" class="logo" id="ganso">
         <h3 id="koko">CHAT</h3>
-        <h4 id="kokito">:)</h4>
+        <h4 id="kokito">:)  </h4>
         <div class="form-group">
             <label>Nombre de usuario</label>
             <input type="text" id="user_name" class="form-control" placeholder="Nombre de usuario">
@@ -28,5 +28,5 @@
         <br><br>
     </div>
 </center>
-    </body>
+    </body>2
 </html>
